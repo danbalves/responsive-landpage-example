@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #232428;
+    --text-dark: #262626;
+    --text-light: #a3a3a3;
+    --extra-light: #f5f5f5;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section_container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section_subheader{
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--text-light);
+}
+
+.section_header {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.section_header::after{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 8rem;
+    color: var(--text-light);
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    letter-spacing: 2px;
+    color: var(--text-dark);
+    background-color: var(--extra-light);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    color: var(--white);
+    background-color: var(--text-dark);
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.header {
+    padding: 5rem 0;
+    background-image: linear-gradient(to top, var(--primary-color), transparent),
+    url("assets/header.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header_icons {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.header_icons img {
+    max-width: 100px;
+}
+
+.header_container h1 {
+    margin-bottom: 2rem;
+    font-size: 10rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-align: center;
+    color: var(--white);
+}
+
+.header_container a {
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+}
+
+.header_container a img {
+    max-width: 40px;
+
+}
+
+.header_container .crew {
+    text-align: center;
+}
+
+.header_container .crew h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--white);
+    opacity: 0.7;
+}
+
+.header_container .crew h4 span {
+    font-size: 1rem;
+    color: var(--white);
+}
